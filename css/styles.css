@@ -22,6 +22,10 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: var(--second-text-color);
@@ -32,7 +36,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .list {
@@ -82,8 +85,6 @@ body {
 .header-list-contacts {
   margin-left: auto;
 }
-.header-item {
-}
 
 .header-link,
 .header-contacts-link {
@@ -117,6 +118,8 @@ body {
 /* -------------HERO------------- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #2f303a;
   text-align: center;
 }
@@ -140,8 +143,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border-color: transparent;
   border-radius: 4px;
+  border: none;
   color: var(--second-text-color);
   background: var(--accent-color);
   min-width: 219px;
@@ -174,13 +177,13 @@ body {
 }
 
 .features-list {
-  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   align-items: flex-start;
 }
 .features-item {
-  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .features-heading {
@@ -214,9 +217,13 @@ body {
   color: var(--top-text-color);
 }
 .activity-list {
+  flex-wrap: wrap;
   gap: 30px;
-  width: calc((100%-60px) / 3);
   justify-content: space-between;
+}
+
+.activity-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 /* -------------TEAM------------- */
 .team {
@@ -226,12 +233,15 @@ body {
 }
 
 .team-list {
+  flex-wrap: wrap;
   gap: 30px;
-  width: calc((100%-60px) / 3);
   justify-content: space-between;
 }
 
 .team-item {
+  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc((100% - 90px) / 4); */
+  border-radius: 0px 0px 4px 4px;
   background: var(--second-text-color);
 }
 
@@ -262,7 +272,7 @@ body {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -319,7 +329,7 @@ body {
 }
 
 .gallery-btn {
-  padding: 6 22;
+  padding: 6px 22px;
   margin-bottom: 50px;
   font-family: inherit;
   font-weight: 500;
@@ -328,7 +338,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
   color: var(--top-text-color);
   background: #f5f4fa;
@@ -341,9 +351,9 @@ body {
 }
 
 .gallery-list {
-  display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .gallery-heading:hover,
@@ -352,11 +362,17 @@ body {
 }
 
 .gallery-item {
-  /* width: calc((100%-60px) / 3); */
+  /* flex-basis: calc((100% - 60px) / 3); */
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.gallery-content {
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .gallery-heading {
-  margin-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
