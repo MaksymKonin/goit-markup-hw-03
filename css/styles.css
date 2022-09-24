@@ -24,6 +24,8 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -80,8 +82,10 @@ body {
 .header-list,
 .header-list-contacts {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
+
 .header-list-contacts {
   margin-left: auto;
 }
@@ -172,7 +176,7 @@ body {
 }
 
 .features {
-  padding-top: 85px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -182,11 +186,13 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
 .features-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
 .features-heading {
+  max-width: 270px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -196,6 +202,7 @@ body {
 }
 
 .features-text {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -216,6 +223,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--top-text-color);
 }
+
 .activity-list {
   flex-wrap: wrap;
   gap: 30px;
@@ -236,9 +244,11 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .team-item {
+  padding-bottom: 30px;
   width: calc((100% - 90px) / 4);
   /* flex-basis: calc((100% - 90px) / 4); */
   border-radius: 0px 0px 4px 4px;
@@ -246,6 +256,7 @@ body {
 }
 
 .team-heading {
+  max-width: 270px;
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -256,6 +267,7 @@ body {
 }
 
 .team-text {
+  max-width: 270px;
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
@@ -321,8 +333,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.gallery-title {
-}
+
 .gallery-items {
   justify-content: center;
   gap: 8px;
@@ -354,6 +365,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .gallery-heading:hover,
@@ -373,6 +385,7 @@ body {
 }
 
 .gallery-heading {
+  max-width: 370px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -381,6 +394,7 @@ body {
 }
 
 .gallery-text {
+  max-width: 370px;
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
