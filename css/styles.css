@@ -337,11 +337,12 @@ body {
 .gallery-items {
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .gallery-btn {
   padding: 6px 22px;
-  margin-bottom: 50px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -364,7 +365,6 @@ body {
 .gallery-list {
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -374,8 +374,8 @@ body {
 }
 
 .gallery-item {
-  /* flex-basis: calc((100% - 60px) / 3); */
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 60px) / 3);
+  /* flex-basis: calc(100% / 3 - 30px); */
 }
 
 .gallery-content {
